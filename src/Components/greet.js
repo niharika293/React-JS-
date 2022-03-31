@@ -5,8 +5,18 @@ import React from 'react';
 // }
 
 // ES6 arrow ()
+// Highly recommended to use props as a parameter in () name. It can be any other name, but let's not deviate
+// from the standard. 
 
-export const Greet = () => <h1>Hello Niharika</h1> //Named Export
+export const Greet = (props) => {
+    console.log(props);
+    return (
+        <div>
+            <h1>Hello {props.name} a.k.a {props.heroName} </h1>
+            {props.children}
+        </div>
+    )
+} //Named Export
 
 export const Greet2 = () => <h1>Hello Niharika</h1>
 

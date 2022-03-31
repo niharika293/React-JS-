@@ -2,7 +2,11 @@ import React, {Component} from 'react';
 
 class Welcome extends Component{
     render(){
-        return <h1>Class Component</h1>
+        return(
+            <div>
+                <h1>Class Component, Hi {this.props.name} aka {this.props.heroName}</h1>
+            </div>
+        ) 
     }
 }
 

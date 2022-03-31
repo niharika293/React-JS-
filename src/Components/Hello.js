@@ -17,11 +17,11 @@ const Hello = () => {
 
     // We've to call createELement again for h1.
     // 2nd parameter accepts key-value pairs, we can;'t use "class" keyword as this is reserved in JS
-    // className shud be used! class is also acceptable in latest react versions
+    // className shud be used! 
     
 
     return React.createElement('div',
-   {id : 'test', class: 'dummy-class'},
+   {id : 'test', className: 'dummy-class'},
     React.createElement('h1',null,'Hello Niharika'));
 
 
