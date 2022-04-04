@@ -5,6 +5,7 @@ import Welcome from './Components/Welcome';
 import Greet, { Greet2 } from './Components/greet';
 import Hello from './Components/Hello';
 import Message from './Components/Message';
+import Counter from './Components/Counter';
 
 function App() {
   return (
@@ -20,7 +21,8 @@ function App() {
       <Welcome name = "Ironman" heroName ="Tony Stark" /> */}
       {/* <Greet2/> */}
      {/* <Hello/> */}
-     <Message/>
+     {/* <Message/> */}
+     <Counter/>
     </div>
   );
 }
