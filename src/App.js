@@ -11,14 +11,14 @@ function App() {
   return (
     <div className="App">
       {/* <Welcome/> */}
-     {/* <Greet name = "Bruce" heroName="superman" > 
+     <Greet name = "Bruce" heroName="superman" > 
       <p>This is children props.</p>
      </Greet> 
      <Greet name = "Mario" heroName ="luigi"> 
       <button>Action</button>
      </Greet> 
      <Greet name = "Ironman" heroName ="Tony Stark" /> 
-      <Welcome name = "Ironman" heroName ="Tony Stark" /> */}
+      <Welcome name = "Ironman" heroName ="Tony Stark" />
       {/* <Greet2/> */}
      {/* <Hello/> */}
      {/* <Message/> */}
