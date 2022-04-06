@@ -10,21 +10,26 @@ class EventBind extends Component {
 
     //   this.clickHandler = this.clickHandler.bind(this); Method 3
     }
-    // clickHandler(){
-    //     this.setState({
-    //         message : 'Goodbye!'
-    //     });
-    //     console.log("this", this); // this undefined here when used with A. // to be confirmed - since, this refers to global object in js. 
-    // }
+    clickHandler(){
+        // this.setState({
+        //     message : 'Goodbye!'
+        // });
+        console.log("this", this); // this undefined here when used with A. 
+    }
+
+    // In normal (), *this* was computed during runtime, Here, the clickHandler() is called via the render (). In render, this = undefined, because render doesn't have it's own this referemce. Hence, returns undefined.
+
+    // In arrow (), Binding of *this* is linked with the lexical scope. Hence, it's convinienet & doesn't return undefined.
+
 
     // Final approach – To use an arrow () as a class property. Basically change the way you define your method in the class.
 
-    clickHandler = () => {
-        this.setState({
-            message : 'Goodbye!'
-        });
-        console.log("this", this);
-    }
+    // clickHandler = () => {
+    //     this.setState({
+    //         message : 'Goodbye!'
+    //     });
+    //     console.log("this", this);
+    // }
 
     render() {
     return (
