@@ -15,7 +15,7 @@ const products = [
 
 // Always recommended to separate the JSX into a separate component when code grows. Example - List item shud iterate thru the list & pass data to the child component where the JSX is mentioned.
 // Here we are passing product as props & Product component is destructring there.
-const productsList = products.map((product) => <Product product = {product}></Product>)
+const productsList = products.map((product) => <Product key={product.id} product = {product}></Product>)
 
   return (
     <div>
