@@ -2,8 +2,9 @@ import React from 'react'
 import Product from './Product';
 
 function NameList() {
- const names = ['Tom', 'Jerry','Popoye']
- const namesList = names.map((name) => <h2>{name}</h2> )
+ const names = ['Tom', 'Jerry','Popoye'] // Keys don't work here. 
+ const namesList = names.map((name, index) => <h2 key={index}>{name}</h2> ) 
+//  Use index only when the list is static, otherwise react will get confused. Try using some npm package. Inde xworks as anti-pattern, it shud be the last resort.  
 
 //  for array of objects - 
 
