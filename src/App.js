@@ -15,6 +15,7 @@ import NameList from './Components/NameList';
 import Stylesheet from './Components/Stylesheet';
 import Inline from './Components/Inline';
 import styles from '../src/appStyles.module.css'
+import Form from './Components/Form';
 
 function App() {
   return (
@@ -40,9 +41,10 @@ function App() {
       {/* <PArentComponent></PArentComponent> */}
      {/* <UserGreeting></UserGreeting> */}
      {/* <NameList></NameList> */}
-     <Stylesheet></Stylesheet>
+     {/* <Stylesheet></Stylesheet>
      <Inline></Inline>
-     <h1 className={styles.success}>Success</h1>
+     <h1 className={styles.success}>Success</h1> */}
+     <Form></Form>
     </div>
   );
 }
