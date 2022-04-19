@@ -21,6 +21,20 @@ export class LifeCycleB extends Component {
         console.log('LifecYcle B componentDidMount');
     }
 
+    shouldComponentUpdate(){
+      console.log('LifecYcle B shouldComponentUpdate');
+      return true;
+    }
+
+    getSnapshotBeforeUpdate(){
+      console.log('LifecYcle B getSnapshotBeforeUpdate');
+      return null;
+    }
+
+    componentDidUpdate(){
+      console.log('LifecYcle B componentDidUpdate');
+    }
+
     render() {
         console.log('Lifecycle B render()');
     return (
