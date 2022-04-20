@@ -17,6 +17,8 @@ import Inline from './Components/Inline';
 import styles from '../src/appStyles.module.css'
 import Form from './Components/Form';
 import LifeCycleA from './Components/LifeCycleA';
+import FragmentsDemo from './Components/FragmentsDemo';
+import Table from './Components/Table';
 
 function App() {
   return (
@@ -46,7 +48,9 @@ function App() {
      <Inline></Inline>
      <h1 className={styles.success}>Success</h1> */}
      {/* <Form></Form> */}
-     <LifeCycleA></LifeCycleA>
+     {/* <LifeCycleA></LifeCycleA> */}
+     <FragmentsDemo/>
+     <Table></Table>
     </div>
   );
 }
