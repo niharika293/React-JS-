@@ -19,6 +19,8 @@ import Form from './Components/Form';
 import LifeCycleA from './Components/LifeCycleA';
 import FragmentsDemo from './Components/FragmentsDemo';
 import Table from './Components/Table';
+import PureComp from './Components/PureComp';
+import ParentComp from './Components/ParentComp';
 
 function App() {
   return (
@@ -49,8 +51,9 @@ function App() {
      <h1 className={styles.success}>Success</h1> */}
      {/* <Form></Form> */}
      {/* <LifeCycleA></LifeCycleA> */}
-     <FragmentsDemo/>
-     <Table></Table>
+     {/* <FragmentsDemo/>
+     <Table></Table> */}
+    <ParentComp/>
     </div>
   );
 }
